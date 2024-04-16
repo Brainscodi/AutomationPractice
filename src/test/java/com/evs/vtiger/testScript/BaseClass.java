@@ -55,8 +55,12 @@ public class BaseClass {
 		kw.setExtentTestObject(exTest);
 		cd= new CommonResuableCode(kw);
 	    cd.validLogin(Username, Password);	
-	  
-
+	
+	}
+	@BeforeMethod
+	public void beforemethod()
+	{
+		System.out.println("This is  before method");
 	}
 	@AfterMethod
 	public void aftermethod(ITestResult result,Method mt) throws InterruptedException

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="responsiveTesting.AutomateResponsive">
+      <class name="com.eva.registration.Registration_Login">
         <methods>
-          <include name="responsiveTesting"/>
+          <include name="registration"/>
         </methods>
-      </class> <!-- responsiveTesting.AutomateResponsive -->
+      </class> <!-- com.eva.registration.Registration_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
