@@ -48,6 +48,13 @@ public class CommonReusabledORlayer {
 		return logout;
 	}
 	
+	@FindBy(xpath = "//a[@href='/products']")
+	private WebElement clickonproduct;
+	public WebElement getgotoproductpage()
+	{
+		return clickonproduct;
+	}
+	
 	
 	
 	

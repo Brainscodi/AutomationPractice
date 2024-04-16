@@ -25,7 +25,7 @@ public class Registration_Login {
 	}
 
 
-	@Test(enabled = true)
+	@Test(enabled = false,priority = 1)
 	public void registration()
 	{    
 		commoncode();
@@ -33,7 +33,7 @@ public class Registration_Login {
 		Assert.assertEquals(actualnewuserSignup, "New User Signup!");
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Kishan");
 		String random=	  new RandomString().make(2);
-		driver.findElement(By.xpath("//input[@placeholder='Name']/following-sibling::input[@placeholder='Email Address']")).sendKeys("codingkishan2001@gmail.com");
+		driver.findElement(By.xpath("//input[@placeholder='Name']/following-sibling::input[@placeholder='Email Address']")).sendKeys("codingkishan2001@gmail.com"+random);
 		driver.findElement(By.xpath("//button[text()='Signup']")).click();
 		driver.findElement(By.id("id_gender1")).click();
 		driver.findElement(By.id("password")).sendKeys("Kishan@12345");
@@ -69,16 +69,16 @@ public class Registration_Login {
 		driver.findElement(By.xpath("//a[@href='/delete_account']")).click();
 		String accountdelete=   driver.findElement(By.xpath("//b[text()='Account Deleted!']")).getText();
 		Assert.assertEquals(accountdelete, "ACCOUNT DELETED!");
-		driver.quit();
+		
 
 	}
-    @Test(enabled = false)
+    @Test(enabled = false,priority = 2)
 	public void validlogin()
 	{
 		commoncode();
 		String loginToYourAccount=driver.findElement(By.xpath("//h2[text()='Login to your account']")).getText();
         Assert.assertEquals(loginToYourAccount, "Login to your account");
-        driver.findElement(By.xpath("//input[@name='password']/preceding-sibling::input/following-sibling::input[@name='email']")).sendKeys("kishan@yopmail.com");
+        driver.findElement(By.xpath("//input[@name='password']/preceding-sibling::input/following-sibling::input[@name='email']")).sendKeys("codingkishan2001@gmail.com");
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Kishan@12345");
         driver.findElement(By.xpath("//button[text()='Login']")).click();
         String loginkishan=  driver.findElement(By.xpath("//b[text()='Kishan']")).getText();
@@ -101,7 +101,7 @@ public class Registration_Login {
         Assert.assertEquals(actualincorrecttext, "Your email or password is incorrect!");
      
     }
-    @Test(priority = 2)
+    @Test(priority = 2,enabled = true)
     public void logout()
     {
     	commoncode();
@@ -117,4 +117,6 @@ public class Registration_Login {
         Assert.assertEquals(navigateloginpage, "Login to your account");
     }
 
+  
+    
 }

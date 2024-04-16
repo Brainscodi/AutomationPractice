@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-16T17:24:55 IST" name="Default suite" finished-at="2024-04-16T17:26:45 IST" duration-ms="109909">
+  <suite started-at="2024-04-16T23:09:02 IST" name="Default suite" finished-at="2024-04-16T23:10:32 IST" duration-ms="90127">
     <groups>
     </groups>
-    <test started-at="2024-04-16T17:24:55 IST" name="Default test" finished-at="2024-04-16T17:26:45 IST" duration-ms="109909">
+    <test started-at="2024-04-16T23:09:02 IST" name="Default test" finished-at="2024-04-16T23:10:32 IST" duration-ms="90127">
       <class name="com.eva.registration.Registration_Login">
-        <test-method signature="registration()[pri:0, instance:com.eva.registration.Registration_Login@6404f418]" started-at="2024-04-16T17:24:55 IST" name="registration" finished-at="2024-04-16T17:25:29 IST" duration-ms="33714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method signature="logout()[pri:2, instance:com.eva.registration.Registration_Login@6404f418]" started-at="2024-04-16T17:25:29 IST" name="logout" finished-at="2024-04-16T17:26:45 IST" duration-ms="76082" status="FAIL">
+        <test-method signature="logout()[pri:2, instance:com.eva.registration.Registration_Login@6404f418]" started-at="2024-04-16T23:09:02 IST" name="logout" finished-at="2024-04-16T23:10:32 IST" duration-ms="90020" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Kishan']"}
@@ -20,9 +16,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80c5626b615a0255b6e3980326440b79, findElement {using=xpath, value=//b[text()='Kishan']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50453/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 80c5626b615a0255b6e3980326440b79]]>
+Command: [1766480bbe3521012dad21cd298df426, findElement {using=xpath, value=//b[text()='Kishan']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57755/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1766480bbe3521012dad21cd298df426]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Kishan']"}
@@ -31,9 +27,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80c5626b615a0255b6e3980326440b79, findElement {using=xpath, value=//b[text()='Kishan']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50453/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 80c5626b615a0255b6e3980326440b79
+Command: [1766480bbe3521012dad21cd298df426, findElement {using=xpath, value=//b[text()='Kishan']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57755/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1766480bbe3521012dad21cd298df426
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
