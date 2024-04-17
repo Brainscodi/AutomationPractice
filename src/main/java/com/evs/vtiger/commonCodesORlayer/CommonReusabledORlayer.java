@@ -62,6 +62,13 @@ public class CommonReusabledORlayer {
 		return homepagetext;
 	}
 	
+	@FindBy(xpath = "//a[@href=\"/view_cart\"]")
+	private WebElement cart;
+	public WebElement gotocartpage()
+	{
+		return cart;
+	}
+	
 	
 	
 	

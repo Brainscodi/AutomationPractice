@@ -6,6 +6,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.coding.Allproduct.ProductClass;
+import com.eva.subscritioncartpage.Cartsubscription;
+import com.eva.verifysubscriptionInhomepage.SubscriptionHomepage;
 import com.evs.practice.contactform.ContactUsPage;
 import com.evs.vtiger.commonCodes.CommonResuableCode;
 import com.evs.vtiger.testScript.BaseClass;
@@ -28,7 +30,7 @@ public class AutomationPracticeProject extends BaseClass{
 	   pc.verifytestfirstproduct();
 	   
 	}
-	@Test
+	@Test(enabled = false)
 	public void verifysearchproduct()
 	{
 		 ProductClass pc=  new ProductClass(kw);
@@ -38,6 +40,28 @@ public class AutomationPracticeProject extends BaseClass{
 		
 	
 	}
+	@Test(enabled = false)
+	public void verifyHomePageSubscription() throws InterruptedException
+	{
+		 ProductClass pc=  new ProductClass(kw);
+		  String actualhomepagetext=  pc.verifyhome();
+		  Assert.assertEquals(actualhomepagetext, "Home");
+		  SubscriptionHomepage sbobj=	  new SubscriptionHomepage(kw);
+		  sbobj.subscriptionHomepage();
+	}
+	
+	@Test()
+	public void verifyCartsubscription() throws InterruptedException
+	{
+		 ProductClass pc=  new ProductClass(kw);
+		  String actualhomepagetext=  pc.verifyhome();
+		  Assert.assertEquals(actualhomepagetext, "Home");
+		  Cartsubscription csubscription=    new Cartsubscription(kw);
+		  csubscription.subscriptioncart();
+		  
+	}
+	
+	
 	
 	
 //	@DataProvider
