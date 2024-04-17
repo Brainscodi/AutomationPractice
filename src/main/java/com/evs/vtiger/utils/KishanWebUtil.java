@@ -1308,7 +1308,8 @@ public class KishanWebUtil {
 		}
 		return snapshotSourceFileobj.getAbsolutePath();
 	}
-
+	
+	
 //	public  List<String> getColumnDataListByColumnName( List<WebElement> tablelistwe1,String tableName,String columnName) {
 //		//		int columnNumber=-1;
 //		//		List<WebElement> listColumnNames=driver.findElements(By.xpath(tableXpath+"//tr[1]//td"));

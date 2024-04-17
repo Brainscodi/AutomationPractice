@@ -55,6 +55,15 @@ public class CommonReusabledORlayer {
 		return clickonproduct;
 	}
 	
+	@FindBy(xpath = "//i[@class='fa fa-home']/parent::a")
+	private WebElement homepagetext;
+	public WebElement gethomepage()
+	{
+		return homepagetext;
+	}
+	
+	
+	
 	
 	
 	
