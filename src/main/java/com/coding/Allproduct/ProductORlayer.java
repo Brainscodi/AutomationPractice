@@ -103,6 +103,105 @@ public class ProductORlayer {
 		return searchProductgext;
 	}
 	
+	@FindBy(xpath = "//img[@src=\"/get_product_picture/1\"]")
+	private WebElement firstproduct;
+	public WebElement getmousehoverfirstproduct()
+	{
+		return firstproduct;
+	}
+	
+	@FindBy(xpath = "(//a[@data-product-id='1'])[2]")
+	private WebElement firstProduct;
+	public WebElement getclickOnFirstProductaddtocart()
+	{
+		return firstProduct;
+	}
+	
+	@FindBy(xpath = "//button[text()='Continue Shopping']")
+	private WebElement clickcountinueshopping;
+	public WebElement getclickOnContinueShoppingBT()
+	{
+		return clickcountinueshopping;
+	}
+	
+	@FindBy(xpath = "//img[@src=\"/get_product_picture/2\"]")
+	private WebElement mousehoversecondproduct;
+	public WebElement getMousehoversecondProduct()
+	{
+		return mousehoversecondproduct;
+	}
+	
+	@FindBy(xpath = "(//a[@data-product-id=\"2\"])[2]")
+	private WebElement clickonsecondproductAddtocart;
+	public WebElement getclickonsecondProductAddtocart()
+	{
+		return  clickonsecondproductAddtocart;
+	}
+	
+	@FindBy(xpath = "//button[text()='Continue Shopping']")
+	private WebElement clickOnsecondproductContinueBT;
+	public WebElement getclickOnsecondproductContinueBT()
+	{
+		return clickOnsecondproductContinueBT;
+	}
+	
+   @FindBy(xpath = "//a[text()='Blue Top']")
+   private WebElement firstproductincart;
+   public WebElement getfirstproducttextIncart()
+   {
+	   return firstproductincart;
+   }
+   
+   @FindBy(xpath = "//a[text()='Men Tshirt']")
+   private WebElement secondProductInCart;
+   public WebElement getsecondprojectgettextIncart()
+   {
+	   return secondProductInCart;
+   }
+   @FindBy(xpath = "//p[text()='Rs. 500']")
+   private WebElement priceoffirstProduct;
+   public WebElement getpriceoffirstProduct()
+   {
+	   return priceoffirstProduct;
+   }
+   
+   @FindBy(xpath = "//a[text()='Blue Top']/parent::h4/parent::td/following-sibling::td/following-sibling::td[@class='cart_quantity']")
+   private WebElement firstproductquantity;
+   public WebElement getfirstproductquantity()
+   {
+	   return firstproductquantity;
+   }
+   
+   @FindBy(xpath = "//a[text()='Blue Top']/parent::h4/parent::td/following-sibling::td/following-sibling::td[@class='cart_quantity']/following-sibling::td[@class='cart_total']")
+	private WebElement firstProductTotalPrice;
+   public WebElement getfirstProductTotalPrice()
+   {
+	   return firstProductTotalPrice;
+   }
+   
+   @FindBy(xpath = "//p[text()='Rs. 400']")
+   private WebElement priceofsecondproduct;
+   public WebElement getpriceofsecondproduct()
+   {
+	   return priceofsecondproduct;
+   }
+   
+   @FindBy(xpath = "//a[text()='Men Tshirt']/parent::h4/parent::td/following-sibling::td/following-sibling::td[@class='cart_quantity']")
+   private WebElement secondproductquantity;
+   public WebElement getsecondproductquantity()
+   {
+	   return  secondproductquantity; 
+   }
+   
+   @FindBy(xpath = "//a[text()='Men Tshirt']/parent::h4/parent::td/following-sibling::td/following-sibling::td/following-sibling::td[@class='cart_total']")
+   private WebElement secondProductTotalPrice;
+   public WebElement getsecondProductTotalPrice()
+   {
+	   return secondProductTotalPrice;
+   }
+	
+	
+	
 	
 	
 

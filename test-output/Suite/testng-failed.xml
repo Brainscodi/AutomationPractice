@@ -12,12 +12,13 @@
     <classes>
       <class name="com.eva.AutomationPractice.AutomationPracticeProject">
         <methods>
+          <include name="verifyHomePageSubscription"/>
           <include name="aftersuit"/>
           <include name="beforeClass"/>
           <include name="beforesuit"/>
-          <include name="verifyCartsubscription"/>
           <include name="aftermethod"/>
           <include name="afterclass"/>
+          <include name="verifysearchproduct"/>
           <include name="beforemethod"/>
           <include name="beforemethod"/>
         </methods>

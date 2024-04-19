@@ -39,7 +39,16 @@ Assert.assertEquals(Actualtitleproductlist, "Automation Exercise - Product Detai
 		Assert.assertEquals(actualAllProductvisible, "ALL PRODUCTS");
 		kc.mySenkeys(getsearchproduct(), "Men Tshirt");
 		kc.myclick(getclickonsearchButton());
-		
+	
+	}
+	public void AddtoCart()
+	{
+		kc.mymouseover(getmousehoverfirstproduct());
+		kc.myclick(getclickOnFirstProductaddtocart());
+		kc.myclick(getclickOnContinueShoppingBT());
+		kc.mymouseover(getMousehoversecondProduct());
+		kc.myclick(getclickonsecondProductAddtocart());
+		kc.myclick(getclickOnsecondproductContinueBT());
 		
 	}
 
