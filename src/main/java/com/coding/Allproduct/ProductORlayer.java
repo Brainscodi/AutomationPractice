@@ -34,14 +34,14 @@ public class ProductORlayer {
 		return allproducttext;
 	}
 	
-	@FindBy(xpath = "//a[@href='/product_details/1']")
+	@FindBy(xpath = "//a[@href='/product_details/11']")
 	private WebElement clickonviewProduct;
 	public WebElement getclickOnViewProduct()
 	{
 		return clickonviewProduct;
 	}
 	
-	@FindBy(xpath = "//h2[text()='Blue Top']")
+	@FindBy(xpath = "//a[text()='Blue Top']/parent::h4/parent::td[@class='cart_description']")
 	private WebElement productnamefirst;
 	public WebElement getproductnamefirstgettext()
 	{
@@ -54,7 +54,7 @@ public class ProductORlayer {
 	{
 		return productcategoryfirst;
 	}
-	@FindBy(xpath = "//span[text()='Rs. 500']")
+	@FindBy(xpath = "//a[text()='Blue Top']/parent::h4/parent::td/following-sibling::td")
 	private WebElement productpricefirst;
 	public WebElement getproductpricefirst()
 	{
@@ -158,7 +158,7 @@ public class ProductORlayer {
    {
 	   return secondProductInCart;
    }
-   @FindBy(xpath = "//p[text()='Rs. 500']")
+   @FindBy(xpath = "//td[@class='cart_price']")
    private WebElement priceoffirstProduct;
    public WebElement getpriceoffirstProduct()
    {
@@ -179,7 +179,7 @@ public class ProductORlayer {
 	   return firstProductTotalPrice;
    }
    
-   @FindBy(xpath = "//p[text()='Rs. 400']")
+   @FindBy(xpath = "//a[text()='Men Tshirt']/parent::h4/parent::td/following-sibling::td[@class='cart_price']")
    private WebElement priceofsecondproduct;
    public WebElement getpriceofsecondproduct()
    {
@@ -199,6 +199,57 @@ public class ProductORlayer {
    {
 	   return secondProductTotalPrice;
    }
+   
+   @FindBy(xpath = "//i[@class='fa fa-shopping-cart']/parent::a[@href='/view_cart']")
+   private WebElement clickoncartbutton;
+   public WebElement getclickoncartbutton()
+   {
+	   return clickoncartbutton;
+   }
+   
+   @FindBy(xpath = "//a[@href=\"/product_details/11\"]")
+   private WebElement clickonviewproduct;
+   public WebElement getclickonviewproduct()
+   {
+	   return clickonviewproduct;
+   }
+   
+   @FindBy(id = "quantity")
+   private WebElement increaseproductquantity;
+   public WebElement getincreaseproductquantity()
+   {
+	   return increaseproductquantity;
+   }
+    
+   @FindBy(xpath = "//button[@class='btn btn-default cart']")
+   private WebElement clickonaddtocartbuttoninsideviewcartpage;
+   public WebElement getclickonaddtocartbuttoninsideviewcartpage()
+   {
+	   return clickonaddtocartbuttoninsideviewcartpage;
+   }
+   
+   @FindBy(xpath = "//button[text()='Continue Shopping']")
+   private WebElement clickoncountinueBT;
+   public WebElement getclickoncountinueBT()
+   {
+	   return clickoncountinueBT;
+   }
+   
+   @FindBy(xpath = "(//a[@href='/view_cart'])[1]")
+   private WebElement clickoncartBT;
+   public WebElement getclickoncartBT()
+   {
+	   return clickoncartBT;
+   }
+   
+   @FindBy(xpath = "//a[text()='Sleeves Printed Top - White']/parent::h4/parent::td/following-sibling::td/following-sibling::td[@class='cart_quantity']")
+   private WebElement increasedProductQuantity;
+   public WebElement getincreasedProductQuantity()
+   {
+	   return increasedProductQuantity;
+   }
+   
+   
 	
 	
 	

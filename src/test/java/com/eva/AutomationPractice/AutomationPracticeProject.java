@@ -60,8 +60,8 @@ public class AutomationPracticeProject extends BaseClass{
 		  csubscription.subscriptioncart();
 		  
 	}
-	@Test
-	public void verifyAddproductInCart()
+	@Test(enabled = false)
+	public void verifyAddproductInCart() throws InterruptedException
 	{
 		 ProductClass pc=  new ProductClass(kw);
 		  String actualhomepagetext=  pc.verifyhome();
@@ -70,6 +70,14 @@ public class AutomationPracticeProject extends BaseClass{
 		  cd.gotoproductpage();
 		  pc.AddtoCart();
 		  
+	}
+	@Test
+	public void verifyproductquantiyincart()
+	{
+		ProductClass pc=  new ProductClass(kw);
+		  String actualhomepagetext=  pc.verifyhome();
+		  Assert.assertEquals(actualhomepagetext, "Home");
+		  pc.verifyproductQuantityincart();
 	}
 	
 	

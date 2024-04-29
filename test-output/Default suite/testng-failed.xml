@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.eva.registration.Vtiger">
+      <class name="com.eva.AutomationPractice.AutomationPracticeProject">
         <methods>
-          <include name="robot"/>
+          <include name="aftersuit"/>
+          <include name="beforeClass"/>
+          <include name="beforesuit"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="verifyproductquantiyincart"/>
+          <include name="beforemethod"/>
+          <include name="beforemethod"/>
         </methods>
-      </class> <!-- com.eva.registration.Vtiger -->
+      </class> <!-- com.eva.AutomationPractice.AutomationPracticeProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
