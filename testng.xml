@@ -13,7 +13,8 @@
 	
   <test  name="Test1">
     <classes>
-     <class name="com.eva.AutomationPractice.AutomationPracticeProject"/>
+<!--     <class name="com.eva.AutomationPractice.AutomationPracticeProject"/>-->
+     <class name="com.eva.AutomationPractice.RemoveProductfromCart"/>
        </classes>
   </test> <!-- Test -->
   

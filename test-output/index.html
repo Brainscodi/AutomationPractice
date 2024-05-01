@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.eva.AutomationPractice.AutomationPracticeProject" class="method navigator-link" hash-for-method="verifyproductquantiyincart">verifyproductquantiyincart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.eva.AutomationPractice.RemoveProductfromCart" class="method navigator-link" hash-for-method="removeProductCart">removeProductCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,19 +122,48 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.eva.AutomationPractice.AutomationPracticeProject</span>
+              <span class="class-name">com.eva.AutomationPractice.RemoveProductfromCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyproductquantiyincart">
-                  </a> <!-- verifyproductquantiyincart -->
-                  <span class="method-name">verifyproductquantiyincart</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [4] but found [16]
-	at com.coding.Allproduct.ProductClass.verifyproductQuantityincart(ProductClass.java:88)
-	at com.eva.AutomationPractice.AutomationPracticeProject.verifyproductquantiyincart(AutomationPracticeProject.java:80)
+                  <a name="removeProductCart">
+                  </a> <!-- removeProductCart -->
+                  <span class="method-name">removeProductCart</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a4c77b2efc7815a494810ce89941bd, clickElement {id=f.074437ADD83C2AC8E3FAE7074211E21B.d.BC3FE2D65504C26876DB2036C47358F3.e.9750}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49594/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83a4c77b2efc7815a494810ce89941bd)] -&gt; xpath: //a[@href=&apos;/products&apos;]]
+Session ID: 83a4c77b2efc7815a494810ce89941bd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.evs.vtiger.utils.KishanWebUtil.myclick(KishanWebUtil.java:171)
+	at com.evs.vtiger.commonCodes.CommonResuableCode.gotoproductpage(CommonResuableCode.java:40)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:18)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 46 more
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -159,7 +188,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.eva.AutomationPractice.AutomationPracticeProject&quot;/&gt;
+      &lt;class name=&quot;com.eva.AutomationPractice.RemoveProductfromCart&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -201,14 +230,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyproductquantiyincart')
-data.setCell(0, 2, 'com.eva.AutomationPractice.AutomationPracticeProject')
-data.setCell(0, 3, 4891);
+data.setCell(0, 1, 'removeProductCart')
+data.setCell(0, 2, 'com.eva.AutomationPractice.RemoveProductfromCart')
+data.setCell(0, 3, 366548);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,26 +252,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.eva.AutomationPractice.AutomationPracticeProject</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyHomePageSubscription</span>
-                <br/>
-                <span class="ignored-method-name">projectAllList</span>
-                <br/>
-                <span class="ignored-method-name">tc001ContactUs</span>
-                <br/>
-                <span class="ignored-method-name">verifyCartsubscription</span>
-                <br/>
-                <span class="ignored-method-name">verifysearchproduct</span>
-                <br/>
-                <span class="ignored-method-name">verifyAddproductInCart</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -251,40 +263,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.eva.AutomationPractice.AutomationPracticeProject</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.eva.AutomationPractice.RemoveProductfromCart</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforesuit</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome, https://automationexercise.com/)</span>
-                <span class="method-start">469 ms</span>
+                <span class="method-start">489 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod</span>
-                <span class="method-start">12917 ms</span>
+                <span class="method-start">13038 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforemethod(codingkishan@yopmail.com, Kishan@12345, public void com.eva.AutomationPractice.AutomationPracticePro...)</span>
-                <span class="method-start">12919 ms</span>
+                <span class="method-name">beforemethod(codingkishan@yopmail.com, Kishan@12345, public void com.eva.AutomationPractice.RemoveProductfromCart...)</span>
+                <span class="method-start">13040 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyproductquantiyincart</span>
-                <span class="method-start">21435 ms</span>
+                <span class="method-name">removeProductCart</span>
+                <span class="method-start">21673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyproductquantiyincart status=FAILURE method=AutomationPracticeProject.verifypr...)</span>
-                <span class="method-start">26368 ms</span>
+                <span class="method-name">aftermethod([TestResult name=removeProductCart status=FAILURE method=RemoveProductfromCart.removeProductCart()[p...)</span>
+                <span class="method-start">388240 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterclass</span>
-                <span class="method-start">36752 ms</span>
+                <span class="method-start">520139 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">aftersuit</span>
-                <span class="method-start">36915 ms</span>
+                <span class="method-start">520932 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

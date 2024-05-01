@@ -15,11 +15,13 @@
 
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.12.0</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.20.0</version>
+</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -53,6 +55,12 @@
 
 
 
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.8.0</version> <!-- Replace with the latest version -->
+    <scope>test</scope> <!-- Make sure it's in the test scope if using for testing -->
+</dependency>
 
 
 	</dependencies>

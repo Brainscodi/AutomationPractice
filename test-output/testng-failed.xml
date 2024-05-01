@@ -10,18 +10,18 @@
   </listeners>
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.eva.AutomationPractice.AutomationPracticeProject">
+      <class name="com.eva.AutomationPractice.RemoveProductfromCart">
         <methods>
           <include name="aftersuit"/>
           <include name="beforeClass"/>
+          <include name="removeProductCart"/>
           <include name="beforesuit"/>
           <include name="aftermethod"/>
           <include name="afterclass"/>
-          <include name="verifyproductquantiyincart"/>
           <include name="beforemethod"/>
           <include name="beforemethod"/>
         </methods>
-      </class> <!-- com.eva.AutomationPractice.AutomationPracticeProject -->
+      </class> <!-- com.eva.AutomationPractice.RemoveProductfromCart -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

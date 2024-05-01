@@ -76,7 +76,8 @@ public class KishanWebUtil {
 	 
 	public void launchbrowser(String browsername) {
 		if (browsername.equalsIgnoreCase("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
+			
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		} else if (browsername.equalsIgnoreCase("firefox")) {

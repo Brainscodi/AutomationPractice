@@ -9,14 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,433</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">520,388</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.eva.AutomationPractice.AutomationPracticeProject</td><td><a href="#m0">verifyproductquantiyincart</a></td><td rowspan="1">1713895837767</td><td rowspan="1">4891</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.eva.AutomationPractice.RemoveProductfromCart</td><td><a href="#m0">removeProductCart</a></td><td rowspan="1">1714585109093</td><td rowspan="1">366548</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">com.eva.AutomationPractice.AutomationPracticeProject#verifyproductquantiyincart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4] but found [16]
-	at com.coding.Allproduct.ProductClass.verifyproductQuantityincart(ProductClass.java:88)
-	at com.eva.AutomationPractice.AutomationPracticeProject.verifyproductquantiyincart(AutomationPracticeProject.java:80)
+<h2>Test1</h2><h3 id="m0">com.eva.AutomationPractice.RemoveProductfromCart#removeProductCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a4c77b2efc7815a494810ce89941bd, clickElement {id=f.074437ADD83C2AC8E3FAE7074211E21B.d.BC3FE2D65504C26876DB2036C47358F3.e.9750}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49594/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83a4c77b2efc7815a494810ce89941bd)] -&gt; xpath: //a[@href=&apos;/products&apos;]]
+Session ID: 83a4c77b2efc7815a494810ce89941bd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.evs.vtiger.utils.KishanWebUtil.myclick(KishanWebUtil.java:171)
+	at com.evs.vtiger.commonCodes.CommonResuableCode.gotoproductpage(CommonResuableCode.java:40)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:18)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 46 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

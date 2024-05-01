@@ -41,10 +41,11 @@ public class AutomateResponsive {
 	   ChromeOptions chromeOpt=new ChromeOptions();
 	   chromeOpt.setExperimentalOption("mobileEmulation", deviceMobEmu);
 	   driver=new ChromeDriver(chromeOpt);
-	   driver.get("https://learning.projects-codingbrains.com/login");
-	   driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("codingbrains13@gmail.com");
-	   driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Admin@1234");
-	   driver.findElement(By.xpath("//button[@class='login-btn']")).click();
+	   driver.manage().window().maximize();
+	   driver.get("https://automationexercise.com/");
+//	   driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("codingbrains13@gmail.com");
+//	   driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Admin@1234");
+//	   driver.findElement(By.xpath("//button[@class='login-btn']")).click();
 	   Thread.sleep(5000);
 	   screenshot();
 	   

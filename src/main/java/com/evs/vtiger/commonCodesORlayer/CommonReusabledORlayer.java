@@ -69,6 +69,13 @@ public class CommonReusabledORlayer {
 		return cart;
 	}
 	
+	@FindBy(xpath = "//a[text()='Proceed To Checkout']")
+	private WebElement clickonProceedtocheck;
+	public WebElement getclickonProceedtocheck()
+	{
+		return  clickonProceedtocheck; 
+	}
+	
 	
 	
 	

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 23 23:40:16 IST 2024</td>
+<td>Started on:</td><td>Wed May 01 23:08:07 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36433 ms)</td>
+<tr><td>Total time:</td><td>520 seconds (520388 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.eva.AutomationPractice.AutomationPracticeProject.verifyproductquantiyincart()'><b>verifyproductquantiyincart</b><br>Test class: com.eva.AutomationPractice.AutomationPracticeProject</td>
-<td><div><pre>java.lang.AssertionError: expected [4] but found [16]
-	at com.coding.Allproduct.ProductClass.verifyproductQuantityincart(ProductClass.java:88)
-	at com.eva.AutomationPractice.AutomationPracticeProject.verifyproductquantiyincart(AutomationPracticeProject.java:80)
+<td title='com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart()'><b>removeProductCart</b><br>Test class: com.eva.AutomationPractice.RemoveProductfromCart</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a4c77b2efc7815a494810ce89941bd, clickElement {id=f.074437ADD83C2AC8E3FAE7074211E21B.d.BC3FE2D65504C26876DB2036C47358F3.e.9750}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49594/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83a4c77b2efc7815a494810ce89941bd)] -&gt; xpath: //a[@href=&apos;/products&apos;]]
+Session ID: 83a4c77b2efc7815a494810ce89941bd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.evs.vtiger.utils.KishanWebUtil.myclick(KishanWebUtil.java:171)
+	at com.evs.vtiger.commonCodes.CommonResuableCode.gotoproductpage(CommonResuableCode.java:40)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:18)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace80052821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace80052821'><pre>java.lang.AssertionError: expected [4] but found [16]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.coding.Allproduct.ProductClass.verifyproductQuantityincart(ProductClass.java:88)
-	at com.eva.AutomationPractice.AutomationPracticeProject.verifyproductquantiyincart(AutomationPracticeProject.java:80)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 46 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710641643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710641643'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a4c77b2efc7815a494810ce89941bd, clickElement {id=f.074437ADD83C2AC8E3FAE7074211E21B.d.BC3FE2D65504C26876DB2036C47358F3.e.9750}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\CBPC-09\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49594/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83a4c77b2efc7815a494810ce89941bd)] -&gt; xpath: //a[@href=&apos;/products&apos;]]
+Session ID: 83a4c77b2efc7815a494810ce89941bd
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.evs.vtiger.utils.KishanWebUtil.myclick(KishanWebUtil.java:171)
+	at com.evs.vtiger.commonCodes.CommonResuableCode.gotoproductpage(CommonResuableCode.java:40)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:18)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
+	at com.eva.AutomationPractice.RemoveProductfromCart.removeProductCart(RemoveProductfromCart.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -116,9 +165,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 46 more
 </pre></div></td>
-<td>4</td>
-<td>com.eva.AutomationPractice.AutomationPracticeProject@5ab956d7</td></tr>
+<td>366</td>
+<td>com.eva.AutomationPractice.RemoveProductfromCart@368247b9</td></tr>
 </table><p>
 </body>
 </html>
