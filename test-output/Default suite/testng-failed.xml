@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="responsiveTesting.AutomateResponsive">
+      <class name="purchaseproductDownloadInvoice.PurchaseProductDownLoadInvoice">
         <methods>
-          <include name="responsiveTesting" invocation-numbers="3"/>
+          <include name="downLoadInvoiceAfterpurchaseOrder"/>
         </methods>
-      </class> <!-- responsiveTesting.AutomateResponsive -->
+      </class> <!-- purchaseproductDownloadInvoice.PurchaseProductDownLoadInvoice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

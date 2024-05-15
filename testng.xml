@@ -14,7 +14,10 @@
   <test  name="Test1">
     <classes>
 <!--     <class name="com.eva.AutomationPractice.AutomationPracticeProject"/>-->
-     <class name="com.eva.AutomationPractice.RemoveProductfromCart"/>
+<!--     <class name="com.eva.AutomationPractice.RemoveProductfromCart"/>-->
+<!--     <class name="com.eva.AutomationPractice.ViewCategoryAndBrandList"/>-->
+<!--     <class name="com.eva.AutomationPractice.AddReveiwOnProductTestScript"/>-->
+      <class name="com.eva.AutomationPractice.ScrollupDownTestScript"/>
        </classes>
   </test> <!-- Test -->
   

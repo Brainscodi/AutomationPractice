@@ -41,6 +41,7 @@ public class BaseClass {
 	@BeforeClass
 	public void beforeClass(String browser,String url)
 	{	kw.launchbrowser(browser);
+	    kw.deleteAllcookies();
 	//kw.maximizeWindow();
 	kw.hitUrl(url);
 	//kw.maximizeWindow();

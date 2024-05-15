@@ -94,6 +94,17 @@ public class KishanWebUtil {
 
 	}
 	
+	public void deleteAllcookies()
+	{
+		try
+		{
+		 driver.manage().deleteAllCookies();	
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
 	public static WebElement fluentWaitForElement(WebDriver driver, final By locator, int timeoutSeconds) {
         Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(timeoutSeconds))
@@ -641,7 +652,7 @@ public class KishanWebUtil {
 	public void scrollbyJavasript() {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("window.scrollBy(0, 500);");
+			js.executeScript("window.scrollBy(0, 1000);");
 			extTest.log(Status.INFO, "Passed ! Scroll is done successfully using javascript");
 
 		} catch (Exception e) {

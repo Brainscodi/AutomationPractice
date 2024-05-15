@@ -1,8 +1,6 @@
 package com.eva.AutomationPractice;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.coding.Allproduct.ProductClass;
